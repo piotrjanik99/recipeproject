@@ -1,0 +1,73 @@
+.container {
+    width: 600px !important;
+    height: 399px !important;
+}
+
+.header2 {
+    height: 30vh;
+    width: 100%;
+    background: url("../img/bg4.jpg") center fixed;
+    background-size: cover;
+}
+
+.header2 .flex-overlay3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header2 .flex-overlay3 h1 {
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-size: 80px;
+}
+
+
+.tytul {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.opis {
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    text-align: center;
+}
+
+.left {
+    width: 40%;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    float: left;
+}
+
+.date {
+    margin-top: 2%;
+    text-align: center;
+}
+
+footer {
+    clear: both;
+}
+
+.rating {
+    height: 20%;
+    width: 40%;
+    clear: both;
+    position: absolute;
+    transform: translate(37.5%, 265%);
+}
+
+.rating .alert {
+    clear: both;
+}

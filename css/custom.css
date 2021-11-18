@@ -1,0 +1,534 @@
+/* Custom CSS for Recipe Project */
+
+body {
+    margin: 0 auto;
+    font-family: 'Poppins';
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background: url("../img/bg4.jpg") center fixed;
+    background-size: cover;
+}
+
+.header .flex-overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+	margin-top: -5%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header .flex-overlay h1 {
+    text-align: center;
+	animation-name: logo;
+	animation-duration: 3s;
+    text-shadow: 2px 2px black;
+}
+
+.header .flex-overlay h1 img {
+    width: 45%;
+    height: 45%;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.navbar-dark .navbar-brand {
+    color: white !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background: url('https://mdbcdn.b-cdn.net/img/svg/hamburger2.svg?color=fff') !important;
+}
+
+/* Button Stylization */
+.btn-dark {
+    background: #434445 !important;
+    box-shadow: 1px 1px 5px black !important;
+    border: none !important;
+}
+
+.btn-dark:hover {
+    background: #2ecc71 !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.btn-dark:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+.fa.fa-user-circle {
+    font-size: 2.5rem;
+    color: white !important;
+	text-shadow: 2px 2px black !important;
+    cursor: pointer;
+}
+
+#reg, #lostPass, #accountExist, #backtoLogin {
+    cursor: pointer;
+}
+
+/* TEST */
+.container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.produkty {
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    /*box-shadow: 1px 5px 10px black;*/
+}
+
+.mgal {
+    list-style-type: none;
+    margin: 0 auto ;
+    text-align: center;
+    padding-left: 0px;
+    vertical-align: middle;
+}
+  
+.mgal ul {
+    padding-left: 0px;
+    margin: 0 auto;
+}
+  
+@media (min-width: 451px) {
+    .mgal li {
+        width: 400px;
+        display: inline-block;
+        margin: 20px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .mgal li {
+        margin: 20px 20px 20px 20px;
+    }
+}
+
+.produkty img {
+    margin-top: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px 1px black;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+    transform: scale(1.5) rotate(10deg);
+}
+
+.text {
+  color: white;
+  font-size: 60px;
+  padding: 16px 32px;
+  filter: drop-shadow(10px 6px 5px black);
+  font-family: 'Poppins';
+}
+
+/* Contact Form With Google Maps */
+@media (min-width: 451px) {
+    .contact-form {
+        height: 60vh;
+        width: 100%;
+        position: relative;
+    }
+}
+
+#contact {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.social a {
+    text-decoration: none;
+    padding: 20px;
+    color: #7b7c7c;
+    font-size: 1.1rem;
+}
+
+.social a:hover {
+    color: #000000;
+    transition: all ease 0.3s;
+}
+
+.contact-box {
+    background-color: #434445;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.c-heading h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #e7eef3;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 0px;
+    padding: 0px;
+}
+
+.c-heading p {
+    font-family: 'Poppins', sans-serif;
+    color: #cecece;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.c-inputs {
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-inputs input {
+    width: 250px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(251, 251, 251, 0.1);
+    outline: none;
+    margin: 10px 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #f4f4f4;
+    display: flex;
+}
+
+.c-inputs textarea {
+    width: 250px !important;
+    height: 200px !important;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(82, 82, 82, 1);
+    color: #f4f4f4;
+    padding: 10px;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+.c-inputs button {
+    width: 200px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+.c-inputs input:focus {
+    border-bottom: 1px solid rgba(252, 252, 252, 1.00);
+    transition: all ease 0.5s;
+}
+
+.c-inputs textarea:focus {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1.00);
+    transition: all ease 0.5s;
+}
+
+.c-inputs button:active {
+    transform: scale(1.02);
+}
+
+.map {
+    filter: grayscale(0.2);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1100px) {
+    .map {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .social {
+        display: none;
+    }
+    .contact-box {
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+    #contact {
+        position: static;
+        transform: translate(0, 0);
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .c-heading h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .contact-form {
+        width: 100%;
+        position: relative;
+    }
+}
+
+/* Animation */
+@keyframes animacja {
+    0%{transform: scale(1)}
+    25%{transform: scale(1.2)}
+    50%{transform: scale(1)}
+    75%{transform: scale(1.2)}
+    100%{transform: scale(1)}
+}
+
+@keyframes logo {
+    0%{margin-left: -3000px;}
+    33%{margin-left: 150px;}
+    66%{margin-left: -50px;}
+    100%{left:0px;}
+}
+
+/* CSS for Login Form */
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 400px;
+    }
+
+    .modal-content {
+        padding: 1rem;
+    }
+}
+
+.modal-header .close {
+    margin-top: -1.5rem;
+}
+  
+.form-title {
+    margin: -2rem 0rem 2rem;
+}
+  
+.btn-round {
+    border-radius: 3rem;
+}
+  
+.delimiter {
+    padding: 1rem;  
+}
+
+.signup-section {
+    padding: 0.3rem 0rem;
+}
+
+/* CSS Stylization Animated Login Form */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+
+.form-title, .close, .close:hover {
+    color: white;
+}
+
+.d-flex input[type = "email"], .d-flex input[type = "password"], .d-flex input[type = "text"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    width: 200px;
+}
+
+.d-flex input[type = "email"]:focus, .d-flex input[type = "password"]:focus, .d-flex input[type = "text"]:focus {
+    border-color: #2ecc71;
+    width: 300px;
+}
+
+#submitLogin, #regBtn, #resetBtn {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 200px;
+}
+
+#submitLogin:hover, #regBtn:hover, #resetBtn:hover {
+    background: #2ecc71;
+}
+
+.signup-section {
+    color: white;
+}
+
+/* Customer Reviews */
+.container-fluid {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background: url("../img/bg3.jpg") center fixed;
+    background-repeat: no-repeat;
+}
+
+.card-main {
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: -70px;
+}
+.card{
+    background-color: transparent;
+}
+.card-0 {
+    color: #fff;
+    background: url("../img/bg2.jpg");
+    position: relative;
+    margin-left: 70px;
+    min-height: 312px;
+}
+
+.carousel-indicators li {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+}
+
+.profile {
+    color: #000;
+    background-color: transparent;
+    position: absolute;
+    left: -80px;
+    top: 13%;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+}
+
+.open-quotes {
+    margin-left: 180px;
+    margin-top: 100px;
+}
+
+.content {
+    margin-left: 150px;
+    margin-right: 80px;
+}
+
+.close-quotes {
+    margin-bottom: 100px;
+    margin-right: 80px;
+}
+
+@media screen and (max-width: 600px) {
+    .card-main {
+        padding: 50px 10px;
+    }
+
+    .card-0 {
+        min-height: 432px;
+    }
+
+    .profile {
+        top: 24%;
+    }
+
+    .profile-pic {
+        display:none;
+    }
+    .carousel-indicators{
+        margin-right: 0px;
+    }
+    .open-quotes {
+        margin-left: 30px;
+    }
+
+    .content {
+        margin-left: 80px;
+    }
+
+    .close-quotes {
+        margin-right: 30px;
+    }
+}
+
+/* Swal Button Custom */
+.swal-button {
+    background-color: #434445 !important;
+}
+
+/* Custom Footer */
+.bg-dark {
+    background-color: #434445 !important;
+}
